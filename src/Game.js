@@ -37,7 +37,6 @@ class Game extends React.Component {
           <Input
             error={res === number1 * number2}
             value= {this.props.res}
-            type="text" pattern="[0-9]*"
             autoFocus={true}
             onChange={e => {
               this.props.changeResult(e.target.value.replace(/\D/,''));
