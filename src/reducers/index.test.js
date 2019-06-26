@@ -15,8 +15,7 @@ test("newNumberReducer at value 0", () => {
 
 test("newNumberReducer in a range", () => {
   for (let i = 0; i < 20; i++) {
-    // Should fail!!!
-    const testAction = newNumber(2, 5);
+    const testAction = newNumber(2, 3);
     const reducedTestAction = newNumberReducer([], testAction);
     expect(reducedTestAction <= 3 && reducedTestAction >= 2).toBeTruthy();
   }
