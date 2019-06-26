@@ -1,4 +1,4 @@
-import { NEW_NUMBER, UPDATE_ANSWER } from './types'
+import { NEW_NUMBER, UPDATE_ANSWER, RESET_ANSWER } from './types'
 
 export const newNumber = (min=11, max=99) => {
 
@@ -9,3 +9,7 @@ export const newNumber = (min=11, max=99) => {
 export const changeResult = result => {
   return { type: UPDATE_ANSWER, payload: result };
 };
+
+export const resetAnswer = () => {
+  return { type: RESET_ANSWER }
+}

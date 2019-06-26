@@ -29,6 +29,21 @@ const About = () => {
         State handling is done with redux and outlook is done with semantic ui
         react.{" "}
       </p>
+
+      <Header as="h2" dividing>
+        Source code and deployment.
+      </Header>
+      <p>
+        Source code can be found from{" "}
+        <a
+          href="https://github.com/tiptan83/calculation_game"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Github
+        </a>
+      </p>
+
       <Header as="h2" dividing>
         History
       </Header>
@@ -49,7 +64,10 @@ const About = () => {
       <Header as="h2" dividing>
         Scoring and tips
       </Header>
-      <p>When you enter correct answer, a text correct will appear next to the result box.</p>
+      <p>
+        When you enter correct answer, a text correct will appear next to the
+        result box.
+      </p>
       <p>There aren't yet any actual scoring in the game.</p>
     </div>
   );
