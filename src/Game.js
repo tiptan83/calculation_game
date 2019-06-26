@@ -18,7 +18,7 @@ class Game extends React.Component {
     return (
       <div style={{ padding: "10px" }}>
 
-        <Header as="h2">Simple math-game (What travis says?)</Header>
+        <Header as="h2">Simple math-game (v. travis-test)</Header>
 
         <CalculationCard
           number1={this.props.number1}
