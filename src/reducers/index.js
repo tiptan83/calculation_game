@@ -1,7 +1,7 @@
 import { NEW_NUMBER, UPDATE_ANSWER } from '../actions/types'
 import { combineReducers } from "redux";
 
-function newNumber(state = 0, action) {
+export const newNumberReducer = (state = 0, action) => {
   const randInt= (min,max) => {
     return(
       Math.floor(Math.random() * (max-min+1)) + min
@@ -21,7 +21,7 @@ function resultReducer(state = 0, action) {
 }
 
 export default combineReducers({
-  number1: newNumber,
-  number2: newNumber,
+  number1: newNumberReducer,
+  number2: newNumberReducer,
   result: resultReducer
 });
