@@ -39,7 +39,7 @@ class Game extends React.Component {
             value= {this.props.res}
             autoFocus={true}
             onChange={e => {
-              this.props.changeResult(e.target.value);
+              this.props.changeResult(e.target.value.replace(/\D/,''));
               
             }}
           />

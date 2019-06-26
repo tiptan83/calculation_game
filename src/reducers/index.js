@@ -1,7 +1,7 @@
 import { NEW_NUMBER, UPDATE_ANSWER, RESET_ANSWER } from "../actions/types";
 import { combineReducers } from "redux";
 
-export const newNumberReducer = (state = 0, action) => {
+export const newNumberReducer = (state = '', action) => {
   const randInt = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
